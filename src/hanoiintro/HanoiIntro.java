@@ -23,11 +23,12 @@ public class HanoiIntro {
         toPeg = "C";
         tempPeg = "B";
         //begin Towers of Hanoi with 4 disks
-        n = 4;
+        n = 3;
         System.out.println("Towers of Hanoi problem");
-        System.out.println("There are " + n + " discs on peg " + fromPeg + " initially");
+        
         //Execute hanoi method to solve the problem
         hanoi(fromPeg, toPeg, tempPeg, n);
+        System.out.println("There are " + n + " discs on peg " + fromPeg + " initially");
     }
 
     public static void hanoi(String fr,String to,String tp,int n){
